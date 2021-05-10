@@ -11,17 +11,31 @@
 }
 
 .left-side {
+    width: calc(60% - 12px);
     background: gray;
     height: fit-content;
-    padding: 20px 0;
+    padding: 20px;
     margin-top: 10px;
+    margin-right: 12px;
 
     h2 {
-        padding: 0 20px;
         font-size: 16px;
         font-weight: 400;
+        margin-bottom: 10px;
     }
 }
+
+.form-dados input[type="text"] {
+    padding: 8px 10px;
+    margin-bottom: 8px;
+}
+.form-dados input[type="text"]:nth-child(2){
+    width: calc(60% - 10px);
+    margin-right: 10px;
+}
+
+
+
 
 .right-side {
     background: gray;
@@ -35,3 +49,4 @@
         font-weight: 400;
     }
 }
+
