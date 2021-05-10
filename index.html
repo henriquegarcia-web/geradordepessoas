@@ -17,7 +17,27 @@
 			<div class="center">
 
 				<div class="header">
-					<h1>Gerador de Pessoas</h1>
+					<div class="w7 left"><h1>Gerador de Pessoas</h1></div>
+					<div class="w3 left">
+
+						<form class="form-gerar">
+							
+							<div class="right"><input type="submit" value="GERAR"></div>
+
+							<div class="right">
+								<select name="lpais" id="lpais">
+									<option value="brasil">Brasil</option>
+									<option value="inglaterra">Inglaterra</option>
+									<option value="eua">EUA</option>
+								</select>
+							</div>
+
+							<div class="clear"></div>
+							
+						</form>
+
+					</div>
+					<div class="clear"></div>
 				</div>
 
 				<div class="left-side left"> <!-- Seção da ESQUERDA -->
@@ -26,7 +46,7 @@
 
 					<div id="dados" class="dados"> 
 
-						<h2>Dados:</h2>
+						<h2 style="margin-top: 0;">Dados:</h2>
 
 						<form class="form-dados">
 
@@ -62,7 +82,7 @@
 
 					<div id="outlook" class="outlook"> 
 
-						<h2>Conta outlook:</h2>
+						<h2>Conta Outlook:</h2>
 
 						<form class="form-outlook">
 
@@ -74,16 +94,90 @@
 
 					</div>
 
+					<!-- Container de CONTA MERCADO BITCOIN -->
+
+					<div id="bitcoin" class="bitcoin"> 
+
+						<h2>Conta Bitcoin:</h2>
+
+						<form class="form-bitcoin">
+
+							<input class="input w10 left" type="text" name="iemailbitcoin" placeholder="Endereço de e-mail">
+							<input class="input w10 left" type="text" name="isenhabitcoin" placeholder="Senha">
+							<input class="input left" type="text" name="icpfbitcoin" placeholder="CPF">
+							<input class="input w4 left" type="text" name="idatabitcoin" placeholder="Data de nascimento">
+
+							<div class="clear"></div>
+						</form>
+
+					</div>
+
+					<!-- Container de CONTA MONERO -->
+
+					<div id="monero" class="monero"> 
+
+						<h2>Conta Monero:</h2>
+
+						<form class="form-monero">
+
+							<input class="input w10 left" type="text" name="iemailmonero" placeholder="Endereço de e-mail">
+							<input class="input w10 left" type="text" name="isenhamonero" placeholder="Senha">
+							<input class="input left" type="text" name="iusuariomonero" placeholder="Nome de usuário">
+							<input class="input w4 left" type="text" name="ipinmonero" placeholder="PIN">
+
+							<div class="clear"></div>
+						</form>
+
+					</div>
+
 				</div>
 
 				<div class="right-side w4 left">
-					<h2>VPN Config:</h2>
+
+					<h2 style="margin-top: 0;">VPN Config:</h2>
+
+					<div>
+						<p>Disponível em:</p>
+						<a href="https://www.tcpvpn.com/vpn-server-brazil" target="_blank"><p>https://www.tcpvpn.com/vpn-server-brazil</p></a>
+					</div>
+
+					<!-- Container de CONTA MONERO -->
+
+					<div id="vpn" class="vpn"> 
+
+						<h2 style="font-size: 14px;">Conta VPN:</h2>
+
+						<form class="form-vpn">
+
+							<input class="input w10 left" type="text" name="iusuariovpn" placeholder="Username">
+							<input class="input w10 left" type="text" name="isenhavpn" placeholder="Password">
+
+							<h2 style="font-size: 14px;">Configuração VPN:</h2>
+
+							<input class="input left" type="text" name="iipvpn" placeholder="IP da VPN">
+							<input class="input w3 left" type="text" name="iportavpn" placeholder="Porta">
+							<textarea class="input w10 left" name="itxtvpn" id="vpn-config" 
+							placeholder='This is a lineshould this be a new line?'></textarea>
+
+							<div class="clear"></div>
+						</form>
+
+					</div>
+
+					<div class="log">
+						<h2 style="margin-top: 10px;">Log:</h2>
+
+						<input class="input w10 left" type="text" name="ilog" placeholder="Log">
+					</div>
+
 				</div>
 
 				<div class="clear"></div>
 			</div>
 
 		</section>
+
+		<div class="white-space"></div>
 		
 		<script src="js/script.js"></script>
 		<script src="//cdn.jsdelivr.net/npm/less@3.13" ></script>

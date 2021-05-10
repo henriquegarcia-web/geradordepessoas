@@ -6,6 +6,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+select, button, input {
+    cursor: pointer;
+}
+
 .clear { 
     clear:both; 
 }
@@ -65,4 +69,8 @@
 }
 .w10 {
     width: 100%;
+}
+
+.white-space {
+    height: 100px;
 }
