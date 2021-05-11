@@ -17,19 +17,25 @@
 			<div class="center">
 
 				<div class="header">
-					<div class="w7 left"><h1>Gerador de Pessoas</h1></div>
-					<div class="w3 left">
+					<div class="w5 left"><h1>Gerador de Pessoas</h1></div>
+					<div class="w5 left">
 
 						<form class="form-gerar">
 							
-							<div class="right"><input type="submit" value="GERAR"></div>
+							<div class="right"><button id="btn-buscar" onclick="buscarData()">BUSCAR</button></div>
 
+							<!--
 							<div class="right">
 								<select name="lpais" id="lpais">
 									<option value="brasil">Brasil</option>
 									<option value="inglaterra">Inglaterra</option>
 									<option value="eua">EUA</option>
 								</select>
+							</div>
+							-->
+
+							<div class="right">
+								<input type="text" name="iidrequest" id="id-request" placeholder="USER ID">
 							</div>
 
 							<div class="clear"></div>
@@ -51,8 +57,11 @@
 						<form class="form-dados">
 
 							<input class="input w10 left" type="text" name="inome" placeholder="Nome completo">
-							<input class="input left" type="text" name="icpf" placeholder="CPF">
-							<input class="input w4 left" type="text" name="idata" placeholder="Data de nascimento">
+							<input class="input left" type="text" name="icpf" placeholder="Núm. de CPF">
+							<input class="input w5 left" type="text" name="irg" placeholder="Núm. de RG">
+							<input class="input left" type="text" name="idata" placeholder="Data de nascimento">
+							<input class="input w5 left" type="text" name="itelefone" placeholder="Telefone">
+							
 
 							<div class="clear"></div>
 						</form>
@@ -180,7 +189,9 @@
 		<div class="white-space"></div>
 		
 		<script src="js/script.js"></script>
+		<script src="js/database.js"></script>
 		<script src="//cdn.jsdelivr.net/npm/less@3.13" ></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 	</body>
 </html>

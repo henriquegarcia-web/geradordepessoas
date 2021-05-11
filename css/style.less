@@ -22,11 +22,18 @@ h2 {
     select {
         padding: 9px 15px;
     }
-    input {
-        padding: 10px 15px;
-        margin-left: 5px;
-    }
+    
 }
+.form-gerar input[type="submit"] {
+    padding: 10px 15px;
+    margin-left: 5px;
+} 
+.form-gerar input[type="text"] {
+    padding: 10px 15px;
+    margin-right: 5px;
+    width: 80px;
+}
+
 
 
 .left-side {
@@ -38,12 +45,15 @@ h2 {
     margin-right: 12px;
 }
 
-.input {
+.input, .form-gerar button {
     padding: 8px 10px;
     margin-bottom: 8px;
 }
-.form-dados input[type="text"]:nth-child(2){
-    width: calc(60% - 10px);
+.form-gerar button {
+    font-size: 16px;   
+}
+.form-dados input[type="text"]:nth-child(2), .form-dados input[type="text"]:nth-child(4) {
+    width: calc(50% - 10px);
     margin-right: 10px;
 }
 .form-endereco input[type="text"]:nth-child(1) {
@@ -84,7 +94,7 @@ h2 {
 }
 
 .log input {
-    height: 100px;
+    height: 142px;
 }
 
 #vpn-config {
